@@ -1,0 +1,13 @@
+.btn {
+	background-color: var(--primary-color) !important; 
+	color: #ffffff !important; 
+	padding: 10px 20px!important;
+	border: none!important;
+	border-radius: 8px!important;
+	cursor: pointer!important;
+	transition: all 0.3s ease 0s; 
+	&:is(:hover, :active) {
+		background-color: var(--hover-button-color)!important; 
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)!important; 
+	}
+}
