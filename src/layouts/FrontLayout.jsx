@@ -11,8 +11,8 @@ export default function FrontLayout() {
 
 	return (
 		<>
-			<nav className="navbar navbar-expand-md bg-body-tertiary fixed-top">
-				<div className="container-fluid">
+			<nav className="navbar navbar-expand-md bg-primary">
+				<div className="container">
 					<a className="navbar-brand" href="#">
 						Offcanvas navbar
 					</a>
@@ -42,7 +42,7 @@ export default function FrontLayout() {
 							<ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
 								{routes.map((route) => (
 									<li key={route.path} className="nav-item">
-										<NavLink className="nav-link" aria-current="page" to={route.path}>
+										<NavLink className="nav-link mx-2" aria-current="page" to={route.path}>
 											{route.name}
 										</NavLink>
 									</li>

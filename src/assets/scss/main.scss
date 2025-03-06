@@ -1,18 +1,7 @@
-:root {
-  --primary-color: #FF6347;       /* 主色 - 番茄红 */
-  --secondary-color: #4682B4;     /* 辅助色 - 钢蓝色 */
-  --background-color: #F5F5F5;    /* 背景色 - 浅灰色 */
-  --text-color: #333333;          /* 文字色 - 深灰色 */
-  --accent-color: #FFD700;        /* 强调色 - 金色 */
-  --hover-link-color: #FF6347;    /* 链接 Hover 颜色 - 番茄红 */
-  --hover-button-color: #FF4500;  /* 按钮 Hover 背景色 - 橙红色 */
-}
-
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "bootstrap/scss/functions";
 
 // 2. Include any default variable overrides here
-@import "../scss/button";
 
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
 @import "../scss/variables";
@@ -20,7 +9,7 @@
 
 @import "bootstrap/scss/maps";
 @import "bootstrap/scss/mixins";
-@import "bootstrap/scss/utilities";
+@import "../scss/utilities";
 
 // Layout & components
 @import "bootstrap/scss/root";
@@ -62,3 +51,7 @@
 @import "bootstrap/scss/utilities/api";
 
 // 8. Add additional custom code here
+
+@import "../scss/root";
+@import "../scss/button";
+@import "../scss/customSwiper";
