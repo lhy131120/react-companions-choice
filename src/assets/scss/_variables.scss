@@ -301,8 +301,8 @@ $cyans: (
 $primary:       #4a6fa5; //$blue !default;
 $secondary:     #4682B4; //$gray-600 !default;
 $success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
+$info:          #ffd700; //$cyan !default;
+$warning:       #ff6347;// !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
@@ -643,12 +643,17 @@ $h6-font-size:                $font-size-base * 1.125 !default; // 18px
 
 // scss-docs-start font-sizes
 $font-sizes: (
+  0: 0,
   1: $font-size-base * 3.75, // 60px
   2: $font-size-base * 3,    // 48px
   3: $font-size-base * 2.5,  // 40px
   4: $font-size-base * 2,    // 32px
-  5: $font-size-base * 1.5,  // 24px
-  6: $font-size-base         // 16px
+  5: $font-size-base * 1.75, // 28px
+  6: $font-size-base * 1.5,  // 24px
+  7: $font-size-base * 1.25, // 20px
+  8: $font-size-base * 1.125,// 18px
+  9: $font-size-base,        // 16px
+  10: $font-size-base * 0.875// 14px
 ) !default;
 // scss-docs-end font-sizes
 

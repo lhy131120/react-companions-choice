@@ -11,7 +11,7 @@ export default function FrontLayout() {
 
 	return (
 		<>
-			<nav className="navbar navbar-expand-md bg-primary">
+			<nav className="navbar navbar-expand-lg bg-primary">
 				<div className="container">
 					<a className="navbar-brand" href="#">
 						Offcanvas navbar

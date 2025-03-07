@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 .swiper {
   .swiper-button-prev,
   .swiper-button-next {
@@ -6,9 +7,10 @@
     border-radius: 50%;
     background-color: var(--primary-color);
     &:after {
-      content: "";
-      position: absolute;
-      
+      font-family: "Material Symbols Outlined";
+      font-size: 24px;
+      color: #ffffff;
+      content: "\e5c4";
     }
     &:is(:hover, :active) {
       background-color: var(--hover-button-color);
@@ -16,5 +18,21 @@
     &.swiper-button-disabled {
       display: none;
     }
+  }
+  .swiper-button-prev {
+    left: var(--swiper-navigation-sides-offset, 5%);
+  }
+  .swiper-button-next {
+    right: var(--swiper-navigation-sides-offset, 5%);
+  }
+  .swiper-button-next:after {
+    content: "\e5c8";
+  }
+  .swiper-pagination-bullet {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: 0 0.5rem!important;
+    padding: 4px;
+    background-color: transparent;
   }
 }
