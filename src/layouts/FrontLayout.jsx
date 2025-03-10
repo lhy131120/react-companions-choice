@@ -1,5 +1,6 @@
 import { NavLink, Outlet } from "react-router";
 import { Popover } from "bootstrap";
+import Footer from "./FooterLayout";
 
 export default function FrontLayout() {
 	const routes = [
@@ -53,6 +54,7 @@ export default function FrontLayout() {
 				</div>
 			</nav>
 			<Outlet />
+			<Footer />
 		</>
 	);
 }

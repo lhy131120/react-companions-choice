@@ -28,11 +28,24 @@
   .swiper-button-next:after {
     content: "\e5c8";
   }
+  .swiper-pagination {
+    display: none;
+    line-height: 0;
+    bottom: 0;
+    margin-bottom: 1%;
+    @include media-breakpoint-up(lg) {
+      display: block;
+    }
+    &-bullet {
+      width: 1.25rem;
+      height: 1.25rem;
+      margin: 0 0.5rem!important;
+      padding: 4px;
+      background-color: transparent;
+    }
+  }
   .swiper-pagination-bullet {
-    width: 1.25rem;
-    height: 1.25rem;
-    margin: 0 0.5rem!important;
-    padding: 4px;
-    background-color: transparent;
   }
 }
+
+// section swiper 
